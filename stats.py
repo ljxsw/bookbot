@@ -33,6 +33,5 @@ def sort(dictionary):
         sorted.append(new_dict)
 
     sorted.sort(reverse=True, key=sort_on)
-    print(sorted)
 
     return sorted
