@@ -1,11 +1,14 @@
 from stats import count_words
+from stats import count_characters
+from stats import sort
 
 
 def main():
     filepath = "books/frankenstein.txt"
     text = get_book_text(filepath)
+    characters = count_characters(text)
 
-    print(f"{count_words(text)} words found in the document")
+    sort(characters)
 
 
 def get_book_text(file):
